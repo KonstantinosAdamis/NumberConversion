@@ -17,6 +17,10 @@ d_num = int(input("Give a decimal number: "))
 def binary(d_num):
 
 	digit_arr = []
+		
+	if d_num == 0:
+
+		digit_arr = [0]
 
 	while d_num != 0:
 
