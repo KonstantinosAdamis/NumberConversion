@@ -1,3 +1,5 @@
+#binary to decimal conversion
+
 b_num = input("Give a binary number: ")
 
 s = 0
@@ -11,6 +13,8 @@ for i in range(len(b_num)):
 	j -= 1
 
 print(s)
+
+#decimal to binary conversion
 
 d_num = int(input("Give a decimal number: "))
 
