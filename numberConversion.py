@@ -1,4 +1,4 @@
-b_num = input("Give a binary number: ")
+b_num = "011110"
 
 s = 0
 
@@ -12,7 +12,7 @@ for i in range(len(b_num)):
 
 print(s)
 
-d_num = int(input("Give a decimal number: "))
+d_num = 4
 
 def binary(d_num):
 
