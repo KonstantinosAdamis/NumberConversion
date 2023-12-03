@@ -1,23 +1,7 @@
-b_num = "011110"
-
-s = 0
-
-j = len(b_num) - 1
-
-for i in range(len(b_num)):
-
-	s += int(b_num[i])*(2**j)
-
-	j -= 1
-
-print(s)
-
-d_num = 4
-
 def binary(d_num):
 
 	digit_arr = []
-		
+
 	if d_num == 0:
 
 		digit_arr = [0]
@@ -34,6 +18,26 @@ def binary(d_num):
 
 		d_num //= 2
 
-	return (list(reversed(digit_arr)))
+	print(list(reversed(digit_arr)))
 
-print(binary(d_num))
+binary(4)
+binary(544)
+binary(4006)
+
+def decimal(b_num):
+
+	s = 0
+
+	j = len(b_num) - 1
+
+	for i in range(len(b_num)):
+
+		s += int(b_num[i])*(2**j)
+
+		j -= 1
+
+	print(s)
+
+decimal("11")
+decimal("10010")
+decimal("111001110101")
